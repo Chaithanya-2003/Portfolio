@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a350fdfc2e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo1.png" class="logo"> -->
+                <h1 class="logo"><span>P</span>ortfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hi, I'm <span>Chaithanya</span><br>Nandimandalam</h1>
+            </div>
+        </div>
+    </div>
+    <!-- header section ends -->
+
+    <!-- about section starts -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m Chaithanya, an engineering graduate in Computer Science and Engineering. My journey in
+                        technology began with mastering the basics of web development using HTML, CSS, and JavaScript,
+                        followed by gaining proficiency in programming languages like Java and Python. Along the way, I
+                        delved into database management and honed my skills in SQL.</p>
+
+                    <p>I am currently seeking opportunities to apply and showcase my skills in a dynamic and reputed
+                        organization. With a passion for learning and problem-solving, I am eager to contribute to
+                        impactful projects and grow alongside a professional team.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Programming Languages<br><span>Java, Python</span></li>
+                            <li>Frontend<br><span>HTML, CSS, JavaScript</span></li>
+                            <li>Database<br><span>SQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Dhanalakshmi College Of Engineering<br><span>B.E Computer Science and
+                                    Engineering</span><br><span>2020-2024</span><br><span>8 GPA</span></li>
+                            <li>Narayana Junior College<br><span>State
+                                    Board</span><br><span>2018-2020</span><br><span>9.5 GPA</span></li>
+                            <li>Dhanalakshmi College Of Engineering<br><span>State
+                                    Board</span><br><span>2017-2018</span><br><span>9.5 GPA</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects starts-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Interactive Data Structures Explorer</h2>
+                    <p>Developed a Java-based application using Swing to visualize and interact with various data
+                        structures. The project includes implementations of arrays, linked lists, stacks, queues
+                        allowing
+                        users to perform operations like insertion, deletion, and traversal. The Swing-based GUI
+                        provides real-time visualization and step-by-step operation breakdowns to enhance understanding.
+                        Emphasized modular design for scalability and maintainability, combining algorithmic concepts
+                        with intuitive visualization for educational and practical learning.
+                    </p>
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Online Grocery Booking Page</h2>
+                    <p> Developed a responsive online grocery booking page using HTML, CSS, and JavaScript. Features
+                        include product listings, search functionality, and a dynamic cart system. Ensured seamless user
+                        experience, cross-browser compatibility, and clean front-end design.</p>
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- projects ends-->
+
+    <!-- contact starts -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> chaithanya9482@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8688953789</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://github.com/Chaithanya-2003"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-square-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/nandimandalamchaithanya/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Resume_Final.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Created By... <span>Chaithanya</span> Made with <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </div>
+
+
+    <!-- <link rel="script" href="script.js"> -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfWaiKVYZM5luCEbS73HQrUkWfZFtkHfgZfYLZES7uYhz1P7UDgHIxYXR8zxJc4tGehA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 1000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
